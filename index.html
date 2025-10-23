@@ -6,17 +6,26 @@
     <title>Portfólio de Apresentação</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        body{
+        body{ /*faz com que o conteudo nao fique atras da navbar*/
             padding-top: 56px;
         }
         section{
             padding-top: 4rem;
             padding-bottom: 4rem;
         }
+        .text-orange{/*cor para o icone do html*/
+            color: #fd7e14;
+        }
+        .text-purple{/*cor para o icone do bootstrap*/
+            color:#6f42c1;
+        }
+        .bg-gray{
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <!--Aqui sera a barra de navegacao com links que vao para partes especificas do portfolio -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gray fixed-top"> <!--Aqui sera a barra de navegacao com links que vao para partes especificas do portfolio -->
         <div class="container">
             <a class="navbar-brand" href="#">Meu Portfólio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,12 +47,12 @@
         </div>
     </nav>
 
-    <section id="sobre-mim" class="bg-light"><!--A primeira section sera para falar um pouco sobre mim-->
+    <section id="sobre-mim" class="bg-dark text-white"><!--A primeira section sera para falar um pouco sobre mim-->
         <div class="container">
             <h2 class="text-center mb-5 display-4">Sobre Mim</h2>
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <div class="text-center p-3 border rounded shadow-sm bg-white">
+                    <div class="text-center p-3">
                         <img src="img/minha-foto.jpeg" class="img-fluid rounded-circle" alt="Foto do Perfil">
                     </div>
                 </div>
@@ -51,60 +60,75 @@
                     <p class="lead">Olá! Meu nome é Gustavo Maiato, tenho 20 anos e atualmente sou um aluno na área de Desenvolvimento Front-End pelo SENAI. Tenho experiência em HTML, CSS, JAVASCRIPT e um pouco de Bootstrap.</p>
                     <P>Atualmente, estou buscando novas oportunidades para aplicar meus conhecimentos em Desenvolvimento Front-End e contribuir para projetos inovadores. Sempre pensando em criar um código limpo e fornecendo uma boa experiência para o usuário.</P>
                     <p>Este portfólio é um exemplo da minha capacidade de utilizar o Bootstrap para criar layouts responsivos de forma rápida e eficiente.</p>
+                    <p class="lead display-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-filetype-html text-orange" viewBox="0 0 16 16"><!--Icones dos metodos e linguagens-->
+                            <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-css text-primary" viewBox="0 0 16 16"><!--Icones dos metodos e linguagens-->
+                            <path fill-rule="evenodd" d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V0zM4.59 7.498q-.908 0-1.455.508-.547.507-.547 1.484v3.106q0 .986.527 1.484t1.406.498q.576 0 1.016-.224.45-.225.703-.674.255-.45.254-1.114v-.185h-1.22v.176q0 .449-.186.683t-.527.235q-.372-.01-.557-.264-.186-.255-.186-.752V9.686q0-.547.166-.811.177-.264.577-.264.321 0 .517.225.195.224.195.693v.205h1.23V9.52q0-.674-.243-1.124a1.55 1.55 0 0 0-.664-.673q-.42-.225-1.006-.225m4.214-.01q-.586 0-1.006.244a1.67 1.67 0 0 0-.635.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.304.42.967.732l.469.215q.44.186.625.43.186.244.186.635 0 .478-.166.703-.157.224-.528.224-.36 0-.547-.244-.185-.243-.205-.752H6.87q.02.996.498 1.524.479.527 1.387.527t1.416-.518.508-1.484q0-.81-.332-1.289-.333-.479-1.045-.79l-.45-.196q-.39-.166-.556-.381-.165-.214-.166-.576 0-.4.166-.596.175-.195.508-.195.36 0 .508.234.156.234.175.703h1.123q-.03-.976-.498-1.484-.468-.518-1.308-.518m4.057 0q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-javascript text-warning" viewBox="0 0 16 16"><!--Icones dos metodos e linguagens-->
+                            <path fill-rule="evenodd" d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM9.053 7.596v3.127l-.007 1.752q0 .498-.186.752t-.556.263q-.342 0-.528-.234-.185-.234-.185-.684v-.175H6.37v.185q0 .665.253 1.113.255.45.703.674.44.225 1.016.225.88 0 1.406-.498.527-.498.527-1.485l.007-1.752V7.596zm3.808-.108q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bootstrap-fill text-purple" viewBox="0 0 16 16"><!--Icones dos metodos e linguagens-->
+                            <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+                            <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+                        </svg>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projetos"><!--Aqui irei apresentar os projetos desenvolvidos em aula e falar um pouco sobre cada um deles-->
+    <section id="projetos" class="bg-dark text-white"><!--Aqui irei apresentar os projetos desenvolvidos em aula e falar um pouco sobre cada um deles-->
         <div class="container">
             <h2 class="text-center mb-5 display-4">Meus Projetos</h2>
             <div class="row row-cols-1 row-cols-md-2 eow-cols-lg-3 g-4">
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-lg bg-dark text-white">
                         <img src="img/batalhanaval.PNG" class="card-img-top" alt="Projeto batalhanaval">
                         <div class="card-body">
                             <h5 class="card-title">Projeto 1: Batalha Naval</h5>
                             <p class="card-text">Nesse projeto nós fomos desafiados a criar o jogo batalha naval que rodasse no terminal.</p>
                             <p class="card-text">Para a criação desse projeto foi utilizado apenas o JAVASCRIPT.</p>
                             <a href="https://github.com/Maiatog/Batalha-Naval-js.git" target="_blank"
-                            class="btn btn-primary">Ver Projeto</a>   
+                            class="btn btn-success">Ver Projeto</a>   
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm bg-dark text-white">
                         <img src="img/calculadora.PNG" class="card-img-top" alt="Projeto calculadora">
                         <div class="card-body">
                             <h5 class="card-title">Projeto 2: Calculadora</h5>
                             <p class="card-text">Nesse projeto nós fomos desafiados a criar uma calculadora funcional e simples.</p>
                             <p class="card-text">Para a criação desse projeto foi utilizado o HTML, CSS e o JAVASCRIPT.</p>
                             <a href="https://github.com/Maiatog/Calculadora.git" target="_blank"
-                            class="btn btn-primary">Ver Projeto</a>   
+                            class="btn btn-success">Ver Projeto</a>   
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm bg-dark text-white">
                         <img src="img/minilayout.PNG" class="card-img-top" alt="Projeto minilayout">
                         <div class="card-body">
                             <h5 class="card-title">Projeto 3: Mini Layout</h5>
                             <p class="card-text">Nesse projeto nós fomos desafiados a criar um layout demonstrativo utilizando ferramentas como o dropdown, caixas roláveis e menus laterais.</p>
                             <p class="card-text">Para a criação desse projeto foi utilizado o HTML, CSS e o JAVASCRIPT.</p>
                             <a href="https://github.com/Maiatog/atvMiniLayout.git" target="_blank"
-                            class="btn btn-primary">Ver Projeto</a>   
+                            class="btn btn-success">Ver Projeto</a>   
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm bg-dark text-white">
                         <img src="img/blog.PNG" class="card-img-top" alt="Projeto blog">
                         <div class="card-body">
                             <h5 class="card-title">Projeto 4: Blog</h5>
                             <p class="card-text">Esse foi um dos meus últimos projetos e foi o que eu mais gostei de fazer, nele eu utilizei várias técnicas que foram ensinadas durante as aulas.</p>
                             <p class="card-text">Para a criação desse projeto foi utilizado o HTML, CSS e o JAVASCRIPT.</p>
                             <a href="https://github.com/Maiatog/Batalha-Naval-js.git" target="_blank"
-                            class="btn btn-primary">Ver Projeto</a>   
+                            class="btn btn-success">Ver Projeto</a>   
                         </div>
                     </div>
                 </div>
@@ -112,21 +136,21 @@
         </div>
     </section>
 
-    <section id="contato" class="bg-light"><!--Aqui sera a aba de contato, onde sera preenchido um formulario-->
+    <section id="contato" class="bg-dark text-white"><!--Aqui sera a aba de contato, onde sera preenchido um formulario-->
         <div class="container">
             <h2 class="text-center mb-5 display-4">Entre em Contato</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-8 ">
                     <form>
-                        <div class="mb-3">
+                        <div class="mb-3 text-white">
                             <label for="nome" class="form-label">Nome:</label>
                             <input type="text" class="form-control" id="nome" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 text-white">
                             <label for="email" class="form-label">E-mail:</label>
                             <input type="email" class="form-control" id="email" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 text-white">
                             <label for="mensagem" class="form-label">Mensagem:</label>
                             <textarea class="form-control" id="mensagem" rows="5" required></textarea>
                         </div>
@@ -137,8 +161,8 @@
         </div>
     </section>
     
-    <footer class="bg-dark text-white text-center py-3"><!--Footer simples com o copy o nome da atividade e Senai-RS 2025-->
-        <p class="mb-0">&copy; 2025 Meu Portfólio Pessoal. Desenvolvido com Bootstrap</p>
+    <footer class="text-white text-center py-3 bg-gray"><!--Footer simples com o copy o nome da atividade e Senai-RS 2025-->
+        <p class="mb-0">&copy; 2025 Meu Portfólio Pessoal Desenvolvido com Bootstrap. SENAI-RS</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
